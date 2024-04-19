@@ -1,0 +1,237 @@
+.techbut{
+    display: inline-block;
+    margin: 20px;
+    height: 85px;
+    border-radius: 10%;
+    width: 40%;
+    border: 3px solid black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    box-shadow: 8px -2px 20px 15px rgba(255, 255, 255, 0.2);
+    color: #86469C !important;
+}
+
+.sec2{
+    position: relative;
+    animation: floatAnimation 2s ease-in-out infinite;
+    box-shadow:  3px -5px 14px 6px rgb(125 50 213);
+}
+
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.technica_buttons{
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    color: #86469C !important;
+}
+
+
+.tech1h2{
+    /* color: white; */
+    font-size: 3rem;
+    margin: 30px !important;
+    font-weight: light;
+    /* font-style: italic; */
+    text-align: center;
+    color: #86469C !important;
+}
+.technica_specs{
+    display: inline-block;
+    width:40%;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px 20px;
+    border-radius: 20px;
+    color: #86469C !important;
+    transition: transform 0.3s ease;
+}
+
+.technica_specs {
+    animation: floating 3s ease infinite; /* Tilt left */
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(15deg) rotateY(15deg) scale(1.1);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  }
+
+.technica_specs h2{
+    font-weight: bold;
+    color: #86469C !important;
+    
+}
+.techhead{
+    border-bottom: 2px solid black;
+}
+
+
+/* Container for skill bars */
+.specs {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.specs p {
+    font-weight: bold;
+    color: #86469C !important;
+    margin:12px 0px;
+}
+
+.skillbar {
+    background-color: #f0f0f0;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skills {
+    height: 15px;
+    text-align: right;
+    color: black;
+    size: 1rem;
+    font-weight: bold;
+    font-style: inherit;
+    line-height: 11px;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    background-color: blue;
+}
+
+.specs {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-name,
+.skill-percentage {
+    opacity: 0;
+    animation: fade-in-delay 0.5s ease-in forwards;
+}
+@keyframes fade-in-delay {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.html {width: 100%; background-color: #04AA6D;} /* Green */
+.css {width: 90%; background-color: #2196F3;} /* Blue */
+.js {width: 85%; background-color: #f44336;} /* Red */
+.Ract{width: 70%; background-color: #808080;} /* Dark Grey */
+
+/* second box  */
+.Node {width: 90%; background-color: #04AA6D;} /* Green */
+.exp {width: 80%; background-color: #2196F3;} /* Blue */
+.ejs{width: 65%; background-color: #f44336;} /* Red */
+.api {width: 80%; background-color: #808080;} /* Dark Grey */
+
+/* third box  */
+.mysql {width: 95%; background-color: #04AA6D;} /* Green */
+.mongo {width: 90%; background-color: #2196F3;} /* Blue */
+.Cloudant {width: 85%; background-color: #f44336;} /* Red */
+.db2 {width: 60%; background-color: #808080;} /* Dark Grey */
+
+/* fourth box  */
+.cpp {width: 100%; background-color: #04AA6D;} /* Green */
+.py {width: 90%; background-color: #2196F3;} /* Blue */
+.java {width: 65%; background-color: #808080;} /* Red */
+
+/* fifth box  */
+.Watson {width: 90%; background-color: #04AA6D;} /* Green */
+.SPSS {width: 50%; background-color: #2196F3;} /* Blue */
+.hdp{width: 85%; background-color: #f44336;} /* Red */
+.bda {width: 70%; background-color: #808080;} /* Dark Grey */
+
+/* sixth box */
+.ps {width: 90%; background-color: #04AA6D;} /* Green */
+.com {width: 80%; background-color: #2196F3;} /* Blue */
+.dt {width: 85%; background-color: #f44336;} /* Red */
+.Team {width: 100%; background-color: #808080;} /* Dark Grey */
+
+
+/* Media queries for different screen widths */
+
+@media (max-width: 400px) {
+    /* Styles for screen width 400px and above */
+    .left-img{
+        height: auto;
+        width: auto;
+    }
+    .technica_buttons {
+        display: inline-block;
+        width: 100%;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 720px) {
+    /* Styles for screen width 720px and above */
+    .techbut {
+        font-size: 2rem;
+        height: 120px;
+    }
+}
+
+@media (max-width: 920px) {
+    /* Styles for screen width 920px and above */
+    .technica_specs {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Styles for screen width 1200px and above */
+    .technica_specs {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1400px) {
+    /* Styles for screen width 1400px and above */
+    .technica_specs {
+        width: 35%;
+    }
+}

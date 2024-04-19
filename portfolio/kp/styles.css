@@ -1,0 +1,604 @@
+body {
+	background: linear-gradient(-45deg, #FA7070, #FEFDED, #C6EBC5, #5BBCFF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    color: #86469C !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+section{
+    margin: 30px 0px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.dispinb2{
+    display: inline-block;
+}
+/* ************************************* */
+
+/* Navbar styling */
+.navbar-custom {
+    margin: 0px;
+    padding: 20px;
+background: linear-gradient(-45deg, #4793AF, #FFC470, #DD5746, #8B322C);
+
+    align-items: center;
+}
+
+
+
+.navbar-brand {
+    color: #f8f9fa !important;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-family: "ADLaM Display", system-ui;
+    color: #f8f9fa;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: rgb(209, 207, 207);
+}
+
+/* Initially hide the navbar */
+.navbar {
+    opacity: 0;
+    transform: translateY(-20px); /* Offset the navbar position */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Apply transition to opacity and transform */
+}
+
+/* Show the navbar with a fade-in animation */
+.navbar.loaded {
+    opacity: 1;
+    transform: translateY(0); /* Reset the navbar position */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-color: #955cba;
+    /* Change toggler icon color */
+}
+
+.signature {
+    font-family: "Alex Brush", cursive;
+}
+/* navbar section ends here */
+
+/* *************************************** */
+
+/* introdunction section of the webstier  */
+
+.left {
+    margin: 5%;
+    width: 40%;
+    vertical-align: top;
+}
+
+
+
+
+/* .left img{
+    margin-left: 200px;
+    width: 300px;
+} */
+
+.right {
+    font-family: "ADLaM Display", system-ui;
+    margin: 15px;
+    width: 45%;
+    /* color: #f8f9fa !important;
+     */
+     color: #86469C !important;
+    padding: 30px 15px;
+    background: radial-gradient(ellipse at center, rgb(255 255 255 / 28%) 0%, rgba(195, 16, 16, 0) 80%);
+    opacity: 0;
+    transform: translateX(100%); /* Start from the right side */
+    transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out
+}
+
+.right.loaded {
+    opacity: 1;
+    transform: translateX(0); /* Reset the position */
+}
+
+#introtext{
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+#introtext h4{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#introtext h2{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#introtext h5{
+    font-size: 1.5rem;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; 
+}
+
+/* the typewriter like anitmation */
+ #typewriter-text{
+    
+  font-size: 1.5rem;
+  color: rgb(94, 6, 177);
+  text-transform: uppercase;
+  border-right: 0.3rem solid;
+  animation: caret 1s steps(1) infinite;
+
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: white
+    }
+  }
+
+.dispinb{
+    display: inline-block;
+}
+
+
+#introtext p{
+    font-size: 1.5rem;
+}
+
+.icon{
+    border: 2px solid ,#2d2369;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.logo{
+    padding: 7px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin:5px;
+}
+
+.logo .img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: white;
+}
+
+#downloadBtn {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #332973, #453c75, #282153, #2d2369, #0C091F);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add initial glow effect */
+    animation: pulse 1.5s infinite alternate; /* Add pulsating animation */
+}
+
+#downloadBtn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 80%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#downloadBtn:hover::after {
+    opacity: 1;
+}
+
+.developer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+  }
+  
+  .developer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F0F0F0; /* Developer's background color */
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite;
+  }
+  .i1 {
+    background-image: url("./images/c++.jpeg");
+    background-size: contain;
+  }
+  
+  .i2 {
+    background-image: url("./images/boot.jpeg");
+    background-size: contain;
+  }
+  
+  .i3 {
+    background-image: url("./images/css.png");
+    background-size: contain;
+  }
+  
+  .i4 {
+    background-image: url("./images/html.png");
+    background-size: contain;
+  }
+  
+  .i5 {
+    background-image: url("./images/js.png");
+    background-size: contain;
+  }
+  
+  .i6 {
+    background-image: url("./images/python.png");
+    background-size: contain;
+  }
+  
+  .i7 {
+    background-image: url("bootstrap.jpg");
+  }
+  
+  
+  .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498DB; /* Icon background color */
+    border-radius: 50%;
+  }
+
+  
+  .icon:nth-child(1) {
+    top: -80px;
+    left: 50%;
+    animation: orbit1 5s linear infinite;
+  }
+  
+  .icon:nth-child(2) {
+    top: 50%;
+    left: -80px;
+    animation: orbit2 5s linear infinite;
+  }
+  
+  .icon:nth-child(3) {
+    top: 50%;
+    right: -80px;
+    animation: orbit3 5s linear infinite;
+  }
+  .icon:nth-child(4) {
+    top: 50%;
+    left: -80px;
+    animation: orbit4 5s linear infinite;
+  }
+  
+  .icon:nth-child(5) {
+    bottom: 50%;
+    left: -80px;
+    animation: orbit5 5s linear infinite;
+  }
+
+  @keyframes orbit4 {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes orbit5 {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes orbit1 {
+    0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes orbit2 {
+    0% {
+      transform: rotate(0deg) translateY(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateY(100px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes orbit3 {
+    0% {
+      transform: rotate(0deg) translateY(-100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateY(-100px) rotate(-360deg);
+    }
+  }
+  
+
+
+/* the introduciton section ends here */
+
+
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        /* Center align links on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+        /* Adjust margin on smaller screens */
+    }
+}
+
+/* for the right section of the introduciton */
+@media (max-width: 1200px){
+    .left img{
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 995px){
+    .left, .right{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* for the download button  */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Increase glow effect on animation */
+    }
+}
+
+
+/* Media queries for different screen widths */
+
+@media (max-width: 400px) {
+    /* Styles for screen width 400px and above */
+    .right{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #introtext h4{
+        font-size: 2rem;
+    }
+
+    #introtext h2{
+        font-size: 2.2rem;
+    }
+    #introtext h5 , #introtext span {
+        font-size: 1rem;
+    }
+
+    #introtext p{
+        font-size: 1rem;
+    }
+
+    .logo{
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+    }
+    .logo .img{
+        height: 20px;
+        width: 20px;
+    }
+
+
+
+    /* now right box or our left box  */
+
+    .left{
+        width: 95%;
+    }
+
+    .left img{
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 560px) {
+    .right{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #introtext h4{
+        font-size: 2.2rem;
+    }
+
+    #introtext h2{
+        font-size: 2.5rem;
+    }
+    #introtext h5 , #introtext span {
+        font-size: 1.3rem;
+    }
+
+    #introtext p{
+        font-size: 1.2rem;
+    }
+
+    .logo{
+        height: 50px;
+        width: 50px;
+        padding: 6px;
+    }
+    .logo .img{
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+    /* now right box or our left box  */
+
+    .left{
+        width: 95%;
+    }
+
+    .left img{
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    /* Styles for screen width 720px and above */
+    .right{
+        padding: 13px;
+        margin: 11px;
+    }
+
+    #introtext h4{
+        font-size: 3rem;
+    }
+
+    #introtext h2{
+        font-size: 4.2rem;
+    }
+    #introtext h5 , #introtext span {
+        font-size: 2rem;
+    }
+
+    #introtext p{
+        font-size: 2rem;
+    }
+
+    .logo{
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+    }
+    .logo .img{
+        height: 40px;
+        width: 40px;
+    }
+
+
+
+    /* now right box or our left box  */
+
+    .left{
+        width: 95%;
+    }
+
+    .left img{
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+    /* Styles for screen width 920px and above */
+    .technica_specs {
+        width: 45%;
+    }
+}
+
+@media (min-width:921px) and (max-width: 1200px) {
+    /* Styles for screen width 1200px and above */
+    .right{
+        padding: 35px;
+        margin: 20px;
+    }
+
+    #introtext h4{
+        font-size: 3rem;
+    }
+
+    #introtext h2{
+        font-size: 4.2rem;
+    }
+    #introtext h5 , #introtext span {
+        font-size: 2rem;
+    }
+
+    #introtext p{
+        font-size: 2rem;
+    }
+
+    .logo{
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+    }
+    .logo .img{
+        height: 40px;
+        width: 40px;
+    }
+    .left{
+        width: 40%;
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .left img{
+        height: 300px;
+        width: 300px;
+        margin: 30px 15px; 
+    }
+    
+}
