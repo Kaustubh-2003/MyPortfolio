@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Initial background color */
+  }
+  
+  .container {
+    text-align: center;
+
+  }
+  
+  pre {
+    font-family: monospace;
+    font-size: 16px;
+    color: #333; /* Default color for text */
+    background-color: transparent; /* Initial background color */
+    padding: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+  }
+  
